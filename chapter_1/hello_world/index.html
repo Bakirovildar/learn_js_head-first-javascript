@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-      var scoops=5;
-      while (scoops>0) {
-          document.write("Another scoop!<br>");
-          scoops=scoops-1;
-      }
-      document.write('Цикл закончился!');
+        var scoops=6;
+        if (scoops>5) {
+            document.write('Больше 5 <br>');
+        }
+        else if (scoops<3) {
+            document.write('Меньше 3');
+        }
+
     </script>
 </head>
 <body>
