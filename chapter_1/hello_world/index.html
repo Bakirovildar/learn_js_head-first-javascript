@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-     var message='Ildar '+'вывод на консоль';
-     console.log(message);
+        var word = "bottles";
+        var count = 99;
+        while (count>0) {
+            console.log(count+word+'булок пива');
+            console.log(count+word+'булок пиваааа');
+            count=count-1;
+            if (count>0) {
+                console.log(count+word+'все меньше остается');
+            }
+            else {
+                console.log('Не осталось ни одной бутылки пиваа');
+            }
+        }
     </script>
 </head>
 <body>
