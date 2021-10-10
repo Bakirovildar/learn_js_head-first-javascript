@@ -1,11 +1,13 @@
-function generate() {
-    var slova1 = ['Привет','Здравствуйте', 'Добрый день']
-    var slova2 = ['Как дела?','Как поживаете?', 'Как оно?']
-    var slova3 = ['Меня зовут Димон','Меня зовут Костян', 'Меня зовут Гена']
+var scores = [60, 50, 60, 58, 54, 54,
+    58, 50, 52, 54, 48, 69,
+    34, 55, 51, 52, 44, 51,
+    69, 64, 66, 55, 52, 61,
+    46, 31, 57, 52, 44, 18,
+    41, 53, 55, 61, 51, 44];
 
-    var gener1 = Math.floor(Math.random()* slova1.length)
-    var gener2 = Math.floor(Math.random()* slova2.length)
-    var gener3 = Math.floor(Math.random()* slova3.length)
-    alert(slova1[gener1]+' '+slova2[gener2]+ ' '+slova3[gener3])
+var output;
+var i = 0;
+while (i<scores.length) {
+    console.log(i)
+    i = i+1
 }
-generate()
