@@ -1,9 +1,13 @@
 window.onload = init
 function init() {
-    var image = document.getElementById('zero')
-    image.onclick = activeImage
+    var image = document.getElementsByTagName('img')
+    for (i=0; i<image.length; i++) {
+        image[i].onclick = showAnswer
+    }
 }
-function activeImage() {
-    var image = document.getElementById('zero')
-    image.src = 'images/two.jpg'
+function showAnswer (eventObj) {
+    var image = eventObj.target
+    var name = image.id
+    name = 'images/'+name + '.jpg'
+    image.src = name
 }
