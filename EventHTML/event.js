@@ -1,13 +1,33 @@
 window.onload = init
 function init() {
-    var image = document.getElementsByTagName('img')
-    for (i=0; i<image.length; i++) {
-        image[i].onclick = showAnswer
-    }
+    var map = document.getElementById('map')
+    map.onmousemove = showCoords
 }
-function showAnswer (eventObj) {
-    var image = eventObj.target
-    var name = image.id
-    name = 'images/'+name + '.jpg'
-    image.src = name
+function showCoords(eventObj) {
+    var map = document.getElementById('coords')
+    var x = eventObj.clientX
+    var y = eventObj.clientY
+    map.innerHTML = 'Map coordinates'+ x + ',' + y
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
